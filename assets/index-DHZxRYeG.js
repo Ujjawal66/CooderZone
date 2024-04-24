@@ -445,11 +445,12 @@ color: var(--dark);
   padding: 0 1rem;
 }
 .main{
+  border: 1px solid #0005;
   box-shadow: 0 0 2px 2px #0009;
   width: 100%;
   min-height: 10rem;
   max-height: 30rem;
-  background-color: #f9f9f9;
+  background-color: #f9f9f
 }
 .opt {
   font-size: 1rem;
@@ -562,7 +563,7 @@ object-position: center;
   opacity: 1;
 }
 `,Vf=({back:e,children:t})=>u.jsxs(tg,{onClick:e,children:[u.jsx("i",{className:"fa-solid fa-xmark"}),u.jsx("div",{className:"hio",onClick:n=>n.stopPropagation(),children:t})]}),tg=A.div`
-position: absolute;
+position: fixed;
 width: 100%;height: 100%;
 top: 0;
 left: 0;
@@ -575,8 +576,8 @@ background-color: #0009;
   max-height: 90%;
   width: 100%;
   max-width: 25rem;
-  border: 1px solid red;
   overflow: hidden;
+  box-shadow: 0 0 5px 2px #0005;
 }
 &>i {
   margin: 2rem;
@@ -585,7 +586,7 @@ background-color: #0009;
   font-size: 2rem;
   color: #fff;
 }
-`;let Dr=[];for(const e of X)Dr.push(e.gallery);Dr.sort(()=>.5-Math.random());Dr=bm(...Dr);const ng=()=>{const[e,t]=M.useState(null);return u.jsxs(Jm,{children:[u.jsx("div",{className:"expol",children:Dr.map(n=>u.jsx(rg,{data:n,set:t}))}),u.jsxs("div",{className:"last",children:[u.jsx("img",{src:"/emptydb.gif"}),u.jsx("p",{children:"No more data Availaible"})]}),e&&u.jsx(Vf,{back:()=>t(null),children:u.jsx(vu,{data:e.data,sidebtn:u.jsx("i",{className:"fa-solid fa-xmark chup",onClick:()=>t(null)})})})]})},rg=({data:e,set:t})=>u.jsx(qm,{children:e.map(n=>u.jsx("div",{className:"column",children:n.map(r=>u.jsx("div",{className:"data",onClick:()=>t({data:r}),children:u.jsx(Hf,{data:r})}))}))}),Ya=()=>u.jsxs(ig,{children:[u.jsx("i",{class:"fa-solid fa-kiwi-bird"}),u.jsx("p",{children:"This feature is not available"})]}),ig=A.div`
+`;let Dr=[];for(const e of X)Dr.push(e.gallery);Dr.sort(()=>.5-Math.random());Dr=bm(...Dr);const ng=()=>{const[e,t]=M.useState(null);return u.jsxs(Jm,{children:[u.jsx("div",{className:"expol",children:Dr.map(n=>u.jsx(rg,{data:n,set:t}))}),u.jsxs("div",{className:"last",children:[u.jsx("img",{src:"emptydb.gif"}),u.jsx("p",{children:"No more data Availaible"})]}),e&&u.jsx(Vf,{back:()=>t(null),children:u.jsx(vu,{data:e.data,sidebtn:u.jsx("i",{className:"fa-solid fa-xmark chup",onClick:()=>t(null)})})})]})},rg=({data:e,set:t})=>u.jsx(qm,{children:e.map(n=>u.jsx("div",{className:"column",children:n.map(r=>u.jsx("div",{className:"data",onClick:()=>t({data:r}),children:u.jsx(Hf,{data:r})}))}))}),Ya=()=>u.jsxs(ig,{children:[u.jsx("i",{class:"fa-solid fa-kiwi-bird"}),u.jsx("p",{children:"This feature is not available"})]}),ig=A.div`
 width: 100%;
 max-width: 55rem;
 font-size: 2rem;
