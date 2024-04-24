@@ -337,7 +337,7 @@ h2 {
       }}
   }
 `,Dm=A.div`
-  position: absolute;
+  position: fixed;
   height: 100%;
   left: 0;top:0;
   width: 100%;
