@@ -187,7 +187,7 @@ padding: 1rem;
 @keyframes anime {
   100%{width: 0;}
 }
-`,He=[];He.push(new gt([u.jsx(um,{}),"/robo1/tic.png"],"This is an Tic Tak Toe game, I made it using React only, Watching this design from google and i love it so i make it",430));He.push(new gt([u.jsx(fm,{}),"/robo1/poll.png"],"This is an Poll Component, i make it using react",330));He.push(new gt([u.jsx(Sm,{}),"/robo1/grapu.jpg"],"This is an working graph, which shows data interactively...i like it ",480));He.push(new gt([u.jsx(hm,{}),"/robo1/progress.jpg"],"I make three loding indicator, so simple and useful",430));He.push(new gt([u.jsx(wm,{}),"/robo1/star.jpg"],"Let's rate by using star rating",430));He.push(new gt(["https://ujjawal66.github.io/toDoApp/","/robo1/todo.png"],"This is an to Do App,  i see this design in random google image,so i make it",430,1));He.push(new gt(["https://ujjawal66.github.io/whatsapp-clone/","/robo1/whats.jpg"],"general whats app clone",430,1));He[0].toggelSave();He[2].toggelSave();He[3].toggelSave();He[5].toggelSave();const jm=()=>u.jsx(Em,{children:u.jsx("div",{className:"container",children:[...Array(10)].map((e,t)=>u.jsx(Cm,{rot:t*9},t))})}),Cm=({rot:e})=>u.jsx("div",{className:"circle",style:{transform:`rotateY(${e}deg)`}}),Em=A.div`
+`,He=[];He.push(new gt([u.jsx(um,{}),"robo1/tic.png"],"This is an Tic Tak Toe game, I made it using React only, Watching this design from google and i love it so i make it",430));He.push(new gt([u.jsx(fm,{}),"robo1/poll.png"],"This is an Poll Component, i make it using react",330));He.push(new gt([u.jsx(Sm,{}),"robo1/grapu.jpg"],"This is an working graph, which shows data interactively...i like it ",480));He.push(new gt([u.jsx(hm,{}),"robo1/progress.jpg"],"I make three loding indicator, so simple and useful",430));He.push(new gt([u.jsx(wm,{}),"robo1/star.jpg"],"Let's rate by using star rating",430));He.push(new gt(["https://ujjawal66.github.io/toDoApp/","robo1/todo.png"],"This is an to Do App,  i see this design in random google image,so i make it",430,1));He.push(new gt(["https://ujjawal66.github.io/whatsapp-clone/","robo1/whats.jpg"],"general whats app clone",430,1));He[0].toggelSave();He[2].toggelSave();He[3].toggelSave();He[5].toggelSave();const jm=()=>u.jsx(Em,{children:u.jsx("div",{className:"container",children:[...Array(10)].map((e,t)=>u.jsx(Cm,{rot:t*9},t))})}),Cm=({rot:e})=>u.jsx("div",{className:"circle",style:{transform:`rotateY(${e}deg)`}}),Em=A.div`
 position: relative;
 width: 100%;
 aspect-ratio: 2/1;
@@ -219,7 +219,7 @@ padding: 1rem;
   transform: rotateY(30deg);
 }
 
-`,pu=[];pu.push(new gt([u.jsx(jm,{}),"/robo2/sphere.jpg"],"This is an Spining spere, I make it using html, css....",900));pu[0].toggelSave();const _m=()=>{const[e,t]=M.useState(""),n=100*(1-e.length/12),r={width:n+"%"},i={backgroundColor:n>70?"red":n>30?"orange":"#02c802"};return u.jsxs(Nm,{children:[u.jsx("h4",{children:"Password Strenght Checker"}),u.jsx("div",{className:"st",style:i,children:u.jsx("div",{className:"cov",style:r})}),u.jsx("input",{type:"Password",placeholder:"Enter You Password",value:e,onChange:l=>t(l.target.value)})]})},Nm=A.div`
+`,pu=[];pu.push(new gt([u.jsx(jm,{}),"robo2/sphere.jpg"],"This is an Spining spere, I make it using html, css....",900));pu[0].toggelSave();const _m=()=>{const[e,t]=M.useState(""),n=100*(1-e.length/12),r={width:n+"%"},i={backgroundColor:n>70?"red":n>30?"orange":"#02c802"};return u.jsxs(Nm,{children:[u.jsx("h4",{children:"Password Strenght Checker"}),u.jsx("div",{className:"st",style:i,children:u.jsx("div",{className:"cov",style:r})}),u.jsx("input",{type:"Password",placeholder:"Enter You Password",value:e,onChange:l=>t(l.target.value)})]})},Nm=A.div`
 position:relative;
 width: 100%;
 aspect-ratio: 1/1;
@@ -235,7 +235,8 @@ h4{font-size: 1.5rem}
 .st {
   position: relative;
   overflow: hidden;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   height: 4px;
   border-radius: 2px;
   // background: linear-gradient(to right, red 30%, orange 30% 70%, #02c802 70%);
@@ -255,9 +256,10 @@ input {
   background: transparent;
   box-shadow: 0 0 8px 1px #000;
   color: #fff;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
 }
-`,hu=[];hu.push(new gt([u.jsx(_m,{}),"/robo3/passs.png"],"This is an normal password strenth cheacker, I show strenth by an indicator, try it.I make it using html, css....",900));hu[0].toggelSave();const X=[];X[0]=new we("robo0",He);X[1]=new we("robo1",pu);X[2]=new we("robo2",hu);X[3]=new we("robo3");X[4]=new we("robo4");X[5]=new we("robo5");X[6]=new we("robo6");X[7]=new we("robo7");X[8]=new we("robo8");X[9]=new we("robo8");X[10]=new we("robo8");X[11]=new we("robo8");X[12]=new we("robo8");X[13]=new we("robo8");X[14]=new we("robo8");const Pm=[...X[0].gallery,...X[1].gallery,...X[2].gallery],mu=e=>X.find(t=>t.name===e),zm=()=>Pm.reduce((e,t)=>(t.saved&&e.push(t),e),[]),Bf=({number:e})=>X.slice(0,e).map(t=>u.jsx("div",{className:"cover",children:u.jsx(Af,{pic:t.pic,name:t.name,sidebtn:u.jsx(Im,{children:"Follow"}),children:"Follow you"})})),Im=A.a`
+`,hu=[];hu.push(new gt([u.jsx(_m,{}),"robo3/passs.png"],"This is an normal password strenth cheacker, I show strenth by an indicator, try it.I make it using html, css....",900));hu[0].toggelSave();const X=[];X[0]=new we("robo0",He);X[1]=new we("robo1",pu);X[2]=new we("robo2",hu);X[3]=new we("robo3");X[4]=new we("robo4");X[5]=new we("robo5");X[6]=new we("robo6");X[7]=new we("robo7");X[8]=new we("robo8");X[9]=new we("robo8");X[10]=new we("robo8");X[11]=new we("robo8");X[12]=new we("robo8");X[13]=new we("robo8");X[14]=new we("robo8");const Pm=[...X[0].gallery,...X[1].gallery,...X[2].gallery],mu=e=>X.find(t=>t.name===e),zm=()=>Pm.reduce((e,t)=>(t.saved&&e.push(t),e),[]),Bf=({number:e})=>X.slice(0,e).map(t=>u.jsx("div",{className:"cover",children:u.jsx(Af,{pic:t.pic,name:t.name,sidebtn:u.jsx(Im,{children:"Follow"}),children:"Follow you"})})),Im=A.a`
 color: blue;
 font-size: 0.7rem;
 cursor: pointer;
@@ -443,10 +445,11 @@ color: var(--dark);
   padding: 0 1rem;
 }
 .main{
-  border: 2px solid var(--hover_color);
+  box-shadow: 0 0 2px 2px #0009;
   width: 100%;
   min-height: 10rem;
   max-height: 30rem;
+  background-color: #f9f9f9;
 }
 .opt {
   font-size: 1rem;
